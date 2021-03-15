@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дата-Калькулятор и таймер</title>
+    <script type="module" src="src/main.js"></script>
+  </head>
+
+  <body>
+    <div style="display: flex">
+      <button id="dateButton">Калькулятор дат</button>
+      <button id="timerButton">Таймер</button>
+    </div>
+    <form id="datecalc">
+      <h3>Калькулятор дат</h3>
+      <label>
+        <strong>Первая дата:</strong>
+        <input type="date" name="firstDate" />
+      </label>
+      <label>
+        <strong>Вторая дата:</strong>
+        <input type="date" name="secondDate" />
+      </label>
+      <button type="submit">Рассчитать!</button>
+      <p id="datecalc__result"></p>
+    </form>
+    <form id="timer" style="display: none">
+      <h3>Таймер</h3>
+      <input type="text" id="inputTime" placeholder="Введите цифру в минутах" />
+      <button id="timer__start">Старт</button>
+      <button id="timer__stop">Стоп</button>
+      <p id="timer__result"></p>
+    </form>
+  </body>
+</html>
